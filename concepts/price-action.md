@@ -216,6 +216,15 @@ Từ QuantVPS guide: Nếu giao dịch trên H1, dùng H4 cho context và M15 đ
 ### Xử lý S/R là Vùng, không phải Điểm
 S/R không phải giá chính xác — là vùng (zones). Giá có thể overshoot nhẹ rồi đảo chiều, hoặc phản ứng ngay trước khi chạm.^[raw/articles/quantvps-price-action-guide.md]
 
+### Fake Breakout (False Breakout)
+Theo Capital.com: False breakout xảy ra khi giá tạm thời vượt qua S/R nhưng nhanh chóng đảo chiều và đóng lại bên trong range cũ. Để tránh fake breakout, chờ xác nhận: đóng nến mạnh bên ngoài level hoặc retest thành công.^[raw/articles/capital-price-action.md]
+
+### Chiến lược Scalping với Price Action (CMC Markets)
+- Vào lệnh xu hướng chính, đợi pullback rồi vào khi giá quay lại hướng trend
+- Dùng **Engulfing Pattern** làm tín hiệu entry: nến xu hướng bao trùm nến pullback
+- 1-minute chart, stop loss 3-5 pips (forex), target 5-10 pips
+- Renko charts: giữ lệnh khi Renko cùng màu, thoát khi đảo màu — hiệu quả trong trending market^[raw/articles/cmc-price-action.md]
+
 ## Xem thêm
 
 - [[candlestick-patterns]] - Chi tiết từng mô hình nến
