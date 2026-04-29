@@ -96,3 +96,196 @@ When new information conflicts with existing content:
 2. If genuinely contradictory, note both positions with dates and sources
 3. Mark the contradiction in frontmatter: `contradictions: [page-name]`
 4. Flag for user review in the lint report
+
+## Core Operations
+
+### 1. Ingest
+
+Khi người dùng cung cấp một source (URL, file, paste), tích hợp nó vào wiki:
+
+① **Capture raw source:**
+   - URL → dùng `web_extract` để lấy markdown, lưu vào `raw/articles/`
+   - PDF → dùng `web_extract` (xử lý PDF), lưu vào `raw/papers/`
+   - Text dán → lưu vào thư mục `raw/` tương ứng
+   - Đặt tên file mô tả: `raw/articles/karpathy-llm-wiki-2026.md`
+   - **Thêm frontmatter raw** (`source_url`, `ingested`, `sha256` của body).
+     Khi re-ingest cùng URL: recompute sha256, so sánh với giá trị lưu — skip nếu giống,
+     flag drift nếu khác. Điều này đủ rẻ để làm mỗi lần re-ingest và bắt sự thay đổi âm thầm của source.
+
+② **Thảo luận takeaways** với người dùng — điều gì thú vị, điều gì quan trọng cho domain.
+   (Skip trong context tự động/cron — đi thẳng đến bước ③)
+
+③ **Check existing content** — search index.md và dùng `search_files` để tìm
+   các pages đã có cho các entities/concepts được nhắc. Đây là sự khác biệt
+   giữa một wiki đang phát triển và một đống nội dung trùng lặp.
+
+④ **Viết hoặc update wiki pages:**
+   - **Entities/concepts mới:** Chỉ tạo pages nếu đáp ứng Page Thresholds
+     trong SCHEMA.md (2+ source mentions, hoặc trung tâm với 1 source)
+   - **Pages đã có:** Thêm thông tin mới, update facts, bump ngày `updated`.
+     Khi thông tin mới mâu thuẫn với content hiện tại, theo Update Policy.
+   - **Cross-reference:** Mỗi page mới hoặc update phải có ít nhất 2 wikilinks
+     đến các pages khác. Kiểm tra các pages hiện có có link back hay không.
+   - **Tags:** Chỉ dùng tags từ taxonomy trong SCHEMA.md
+   - **Provenance:** Trên pages tổng hợp 3+ sources, thêm `^[raw/articles/source.md]`
+     markers vào cuối các đoạn mà claims đến từ source cụ thể.
+   - **Confidence:** Đối với claims nhiều ý kiến, nhanh thay đổi, hoặc single-source,
+     set `confidence: medium` hoặc `low`. Đừng đánh dấu `high` trừ khi claim được
+     hỗ trợ tốt qua nhiều sources.
+
+⑤ **Update navigation:**
+   - Thêm pages mới vào `index.md` ở section đúng, theo thứ tự bảng chữ cái
+   - Update tổng số trang và ngày "Last updated" trong header index
+   - Ghi vào `log.md`: `## [YYYY-MM-DD] ingest | Source Title`
+   - Liệt kê mọi file được tạo hoặc cập nhật trong log entry
+
+⑥ **Report thay đổi** — liệt kê mọi file được tạo hoặc cập nhật cho người dùng.
+
+Một source có thể kích hoạt updates qua 5-15 wiki pages. Điều này bình thường
+và mong muốn — hiệu ứng tích lũy.
+
+### 2. Query
+
+Khi người dùng hỏi một câu hỏi về domain của wiki:
+
+① **Đọc `index.md`** để xác định các pages liên quan.
+② **Với wiki 100+ pages**, cũng dùng `search_files` trên tất cả `.md` files
+   cho các keywords — index riêng có thể bỏ lỡ content liên quan.
+③ **Đọc các pages liên quan** dùng `read_file`.
+④ **Tổng hợp câu trả lời** từ kiến thức đã biên dịch. Trích dẫn các wiki pages
+   bạn đã dùng: "Dựa trên [[page-a]] và [[page-b]]..."
+⑤ **Lưu các câu trả lời có giá trị** — nếu câu trả lời là một phân tích so sánh sâu,
+   một deep dive, hoặc một synthesis mới, tạo một page trong `queries/` hoặc `comparisons/`.
+   Đừng lưu các lookups tầm thường — chỉ lưu các câu trả lời tốn công tái-derive.
+⑥ **Update log.md** với query và việc nó có được lưu hay không.
+
+### 3. Lint
+
+Khi người dùng yêu cầu lint, health-check, hoặc audit wiki:
+
+① **Orphan pages:** Tìm các pages không có `[[wikilinks]]` inbound từ các pages khác.
+```python
+# Dùng execute_code để scan — programmatic qua tất cả wiki pages
+import os, re
+wiki = "<WIKI_PATH>"
+# Scan tất cả .md files trong entities/, concepts/, comparisons/, queries/
+# Extract tất cả [[wikilinks]] — build inbound link map
+# Pages với zero inbound links là orphans
+```
+
+② **Broken wikilinks:** Tìm `[[links]]` trỏ đến pages không tồn tại.
+
+③ **Index completeness:** Mỗi wiki page phải xuất hiện trong `index.md`. So sánh
+   filesystem với các entries trong index.
+
+④ **Frontmatter validation:** Mỗi wiki page phải có đủ các trường bắt buộc
+   (title, created, updated, type, tags, sources). Tags phải nằm trong taxonomy.
+
+⑤ **Stale content:** Pages có ngày `updated` >90 ngày so với source mới nhất nhắc cùng entities.
+
+⑥ **Contradictions:** Pages cùng topic với các claims mâu thuẫn. Tìm các pages
+   có chung tags/entities nhưng phát biểu các facts khác nhau. Surface tất cả pages
+   với `contested: true` hoặc `contradictions:` frontmatter để user review.
+
+⑦ **Quality signals:** Liệt kê các pages với `confidence: low` và bất kỳ page nào
+   chỉ trích dẫn một source duy nhất mà không có confidence field — các ứng cử viên
+   để tìm corroboration hoặc hạ xuống `confidence: medium`.
+
+⑧ **Source drift:** Với mỗi file trong `raw/` có `sha256:` frontmatter, recompute hash
+   và flag không khớp. Không khớp cho biết raw file đã được edit (không nên xảy ra)
+   hoặc ingested từ một URL đã thay đổi kể từ lần đầu. Không phải lỗi nghiêm trọng,
+   nhưng đáng báo cáo.
+
+⑨ **Page size:** Flag các pages vượt 200 lines — ứng cử viên để tách (split).
+
+⑩ **Tag audit:** Liệt kê tất cả tags đang dùng, flag bất kỳ tag nào không có trong
+    SCHEMA.md taxonomy.
+
+⑪ **Log rotation:** Nếu log.md vượt 500 entries, rotate nó.
+
+⑫ **Report findings** với các file paths cụ thể và suggested actions, nhóm theo
+   severity (broken links > orphans > source drift > contested pages > stale content > style issues).
+
+⑬ **Ghi vào log.md:** `## [YYYY-MM-DD] lint | N issues found`
+
+## Working with the Wiki
+
+### Searching
+
+```bash
+# Tìm pages theo content
+search_files "transformer" path="$WIKI" file_glob="*.md"
+
+# Tìm pages theo filename
+search_files "*.md" target="files" path="$WIKI"
+
+# Tìm pages theo tag
+search_files "tags:.*alignment" path="$WIKI" file_glob="*.md"
+
+# Hoạt động gần đây
+read_file "$WIKI/log.md" offset=<last 20 lines>
+```
+
+### Bulk Ingest
+
+Khi ingest nhiều sources cùng lúc, batch các updates:
+1. Đọc tất cả sources trước
+2. Xác định tất cả entities và concepts qua tất cả sources
+3. Check existing pages cho tất cả (một search pass, không phải N)
+4. Tạo/update pages trong một pass (tránh redundant updates)
+5. Update index.md một lần ở cuối
+6. Ghi một log entry duy nhất bao phủ cả batch
+
+### Archiving
+
+Khi content bị thay thế hoàn toàn hoặc scope thay đổi:
+1. Tạo `_archive/` nếu chưa có
+2. Di chuyển page đến `_archive/` với path gốc (ví dụ `_archive/entities/old-page.md`)
+3. Xóa khỏi `index.md`
+4. Update các pages có link đến nó — thay wikilink bằng plain text + "(archived)"
+5. Log action archive
+
+### Obsidian Integration
+
+Thư mục wiki hoạt động như một Obsidian vault:
+- `[[wikilinks]]` render thành các links clickable
+- Graph View visualize knowledge network
+- YAML frontmatter hỗ trợ Dataview queries
+- Folder `raw/assets/` lưu images referenced via `![[image.png]]`
+
+Để sử dụng tốt:
+- Set Obsidian attachment folder thành `raw/assets/`
+- Enable "Wikilinks" trong Obsidian settings
+- Cài đặt plugin Dataview cho các queries như `TABLE tags FROM "entities" WHERE contains(tags, "company")`
+
+Nếu dùng skill Obsidian cùng lúc, set `OBSIDIAN_VAULT_PATH` giống như wiki path.
+
+### Ghi chú Git
+origin  git@github.com:mihb123/trading.git
+source: cd $WIKI_PATH
+- check status: "git status"
+- commit change: "git commit -m "<message>""
+- push code: git push origin main
+- check file changes: "git add --all && git diff --cached"
+- check changes and generate commit message and push code after having new commit
+
+## Pitfalls
+
+- **KHÔNG BAO GIỜ sửa files trong `raw/`** — sources là bất biến. Sửa chữa đi vào wiki pages.
+- **LUÔN orient trước** — đọc SCHEMA + index + recent log trước bất kỳ operation nào trong một session mới.
+  Việc bỏ qua gây ra duplicates và missed cross-references.
+- **LUÔN update index.md và log.md** — việc bỏ qua khiến wiki xuống cấp. Đây là xương sống điều hướng.
+- **Đừng tạo pages cho các mentions tầm thường** — tuân theo Page Thresholds trong SCHEMA.md. Một tên
+  xuất hiện một lần trong footnote không đủ điều kiện để có entity page.
+- **Đừng tạo pages không có cross-references** — các pages cô lập là vô hình. Mỗi page phải có
+  ít nhất 2 wikilinks đến các pages khác.
+- **Frontmatter là bắt buộc** — nó cho phép search, filtering, và staleness detection.
+- **Tags phải từ taxonomy** — tags tự do sẽ biến thành noise. Thêm tags mới vào SCHEMA.md trước,
+  rồi hãy dùng chúng.
+- **Giữ các pages dễ quét** — một page nên đọc được trong 30 giây. Tách các pages quá 200 lines.
+  Di chuyển phân tích chi tiết sang các deep-dive pages riêng.
+- **Hỏi trước khi mass-update** — nếu một ingest sẽ chạm 10+ existing pages, xác nhận scope với user.
+- **Rotate log** — khi log.md vượt 500 entries, đổi tên thành `log-YYYY.md` và start fresh.
+  Agent nên kiểm tra log size trong lúc lint.
+- **Xử lý contradictions một cách rõ ràng** — đừng ghi đè lặng lẽ. Ghi lại cả hai claims với ngày,
+  đánh dấu trong frontmatter, flag để user review.

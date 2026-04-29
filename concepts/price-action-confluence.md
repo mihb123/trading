@@ -161,6 +161,7 @@ Nếu ≥ 5/7 tiêu chí được đánh dấu → vào lệnh. Nếu không →
 ## Lỗi Thường Gặp khi Dùng Confluence
 
 ❌ **Ép confluence**: Cố tình vẽ thêm S/R, trendline không có thật để "tạo" confluence  
+❌ **S/R không confluence đa timeframe**: Level chỉ xuất hiện trên 1 khung (ví dụ M15) nhưng không có trên D1 — độ tin cậy thấp^[raw/articles/quantvps-price-action-guide.md]
 ❌ **Over-analysis**: Chờ quá nhiều yếu tố → không bao giờ vào lệnh  
 ❌ **Bỏ qua timeframe chính**: Chỉ nhìn H1/M15 mà quên D1  
 ❌ **Confluence sai**: 3 yếu tố cùng loại (3 MA cắt nhau) ≠ confluence thực sự  

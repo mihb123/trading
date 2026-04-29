@@ -42,3 +42,29 @@
 - Updated: concepts/price-action.md (added KISS philosophy section from Nial Fuller)
 - Updated: index.md (9 total pages)
 - New concepts: Fakey pattern types, confluence scoring system (12+ points = quality setup)
+## [2026-04-30] ingest | 7 URL Source Links Consolidated
+- Sources captured: 7 URLs related to price action trading
+- Created: raw/articles/capital-price-action.md [BLOCKED]
+- Created: raw/articles/cmc-price-action.md [BLOCKED]  
+- Created: raw/articles/tradingsetupsreview-advanced.md [PARTIAL]
+- Created: raw/articles/scribd-10-advance-pa.md [RESTRICTED]
+- Created: raw/articles/quantvps-price-action.md [BLOCKED]
+- Created: raw/articles/forexfactory-secrets.md [BLOCKED]
+- Created: raw/articles/quora-key-aspects.md [BLOCKED]
+- Notes: Most sources blocked by Cloudflare/bot detection. TradingSetupsReview returned index only with partial content list. Scribd requires login. Cumulative with prior URLs: 16 total sources ingested, 5 blocked, 2 partial, 9 full success.
+- Status: All raw links archived for manual review / future re-attempts.
+
+## [2026-04-30] ingest | Re-attempted Blocked URLs with Browser
+- Sources successfully extracted using browser tool:
+  - raw/articles/tradingsetupsreview-1-uncover-patterns.md [SUCCESS] - Full article by Galen Woods: 4-step process to uncover price action patterns
+  - raw/articles/tradingsetupsreview-2-trapped-traders.md [SUCCESS] - Full article by Galen Woods: Identifying bear/bull traps with 2 guidelines + 4 examples
+  - raw/articles/quantvps-price-action-guide.md [SUCCESS] - Full comprehensive guide by Robert Callahan: Beginner to advanced price action, including pin bars, inside bars, breakout-retest, MTF analysis
+- Still blocked (Cloudflare/login):
+  - capital-price-action.md, cmc-price-action.md, forexfactory-secrets.md, quora-key-aspects.md (Cloudflare)
+  - scribd-10-advance-pa.md (requires login)
+- Updated: concepts/price-action.md (added 4-step pattern discovery, 3:1 timeframe rule, S/R as zones)
+- Updated: concepts/price-action-confluence.md (added S/R multi-timeframe confluence warning)
+- Created: concepts/trapped-traders.md (new concept page: bull/bear trap detection, 4 chart examples from FDAX, EURUSD, BAC, BTC/USD)
+- Updated: index.md (10 total pages, added trapped-traders entry)
+- 3 previous BLOCKED/PARTIAL raw articles updated to reflect successful extraction
+

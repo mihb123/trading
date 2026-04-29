@@ -183,6 +183,39 @@ Kết hợp Price Action với [[multi-timeframe-forex]]:
 | Số lượng setup | Ít, chọn lọc | Nhiều, dễ nhiễu |
 | Kết quả | Ổn định hơn dài hạn | Thất thường, khó duy trì |
 
+## Phương pháp Thực hành: Khám phá Pattern từ Scratch
+
+Theo Trading Setups Review (Galen Woods), bạn có thể tự khám phá price action patterns qua 4 bước:
+
+### Bước 1: Biểu đồ sạch
+- Mở biểu đồ nến trắng (không Heiken-Ashi/Renko)
+- Zoom ~200 nến gần nhất
+- Không indicators
+
+### Bước 2: Xác định Bias
+- Kẻ đường từ nến đầu đến nến cuối cùng
+- Dốc lên → bullish bias (chỉ tìm entry mua)
+- Dốc xuống → bearish bias (chỉ tìm entry bán)
+- Ngang → cả hai hướng
+
+### Bước 3: Khoanh vùng Entry Lý tưởng
+- Đánh dấu các điểm đảo chiều bạn muốn vào lệnh
+- Cân nhắc: holding period, reward-to-risk ratio, adverse excursion
+
+### Bước 4: Tìm Điểm Tương đồng
+- So sánh các entry đã đánh dấu
+- Dùng OHLC: nến tăng/giảm? range? so với nến trước?
+- Tìm Trend Bars, Dojis, gap giữa các nến
+- Lặp lại qua nhiều charts để hệ thống hóa
+
+> *"No one has a monopoly on price action trading patterns. The price patterns themselves belong to no one."* — Galen Woods^[raw/articles/tradingsetupsreview-1-uncover-patterns.md]
+
+### Quy tắc 3:1 Timeframe
+Từ QuantVPS guide: Nếu giao dịch trên H1, dùng H4 cho context và M15 để căn entry. Cấu trúc 3-chart: Daily (context) → 4H (setups) → 1H (entries).^[raw/articles/quantvps-price-action-guide.md]
+
+### Xử lý S/R là Vùng, không phải Điểm
+S/R không phải giá chính xác — là vùng (zones). Giá có thể overshoot nhẹ rồi đảo chiều, hoặc phản ứng ngay trước khi chạm.^[raw/articles/quantvps-price-action-guide.md]
+
 ## Xem thêm
 
 - [[candlestick-patterns]] - Chi tiết từng mô hình nến
