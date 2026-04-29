@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 10
+> Last updated: 2026-04-30 | Total pages: 11
 
 ## Entities
 
@@ -15,6 +15,7 @@
 - [[multi-timeframe-forex]] - Chiến lược Đa Khung Thời Gian kết hợp Price Action trong Forex
 - [[price-action]] - Phương pháp giao dịch theo hành vi giá thuần túy, không indicator
 - [[price-action-confluence]] - Sự hội tụ tín hiệu: cách lọc setup chất lượng cao
+- [[pullback-retracement]] - Giao dịch Pullback và Retracement: entry theo xu hướng
 - [[trapped-traders]] - Bẫy Bull và Bear: phát hiện và giao dịch với trader bị kẹt
 
 ## Comparisons

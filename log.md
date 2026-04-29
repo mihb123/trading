@@ -79,3 +79,24 @@
 - Updated: index.md (page count maintained, content enriched)
 - 3 previously BLOCKED raw articles updated to SUCCESS
 
+## [2026-04-30] ingest | Vong 1: Multi-Timeframe Analysis (Chartsnipe + ForexMechanics)
+- Sources ingested:
+  - raw/articles/chartsnipe-mtf-forex-guide.md [SUCCESS] (ChartSnipe, 5.3K chars) - 4-step top-down framework, stacked entry templates, conflict resolution
+  - raw/articles/forexmechanics-mtf-analysis.md [SUCCESS] (ForexMechanics, 2.9K chars) - Elder's Triple Screen system, timeframe selection 4-6x rule, pre-click checklist
+- Updated: concepts/multi-timeframe-forex.md (added Triple Screen, 4-step framework, stacked entry templates, conflict resolution, pre-click checklist, correlation management)
+- Keywords: "multi-timeframe analysis trading strategy" "top-down analysis forex"
+
+## [2026-04-30] ingest | Vong 2: HTF Bias + LTF Entry Confluence (TTrades)
+- Sources ingested:
+  - raw/articles/ttrades-top-down-analysis.md [SUCCESS] - Top-down analysis with CISD, continuation OBs, 3-step ICT framework, worked examples
+- Updated: concepts/multi-timeframe-forex.md (added CISD, Continuation Order Blocks, ICT framework)
+- Keywords: "higher timeframe bias lower timeframe entry" "multiple timeframe confluence"
+
+## [2026-04-30] ingest | Vong 3: Price Action Strategies (Rayner Teo + Nial Fuller)
+- Sources ingested:
+  - raw/articles/rayner-price-action-strategies.md [SUCCESS] - Rayner Teo: comprehensive PA strategies
+  - raw/articles/nial-fuller-retracement-entries.md [SUCCESS] - Nial Fuller: retracement entry techniques
+- Created: concepts/pullback-retracement.md (98 lines) - Pullback & Retracement cho trend trading
+- Updated: index.md (11 pages)
+- Keywords: "pullback trading retracement entry" "trend continuation patterns"
+- Note: 5/10 vòng chưa hoàn thành do timeout subagent. Cần chạy thêm: S/R zones, advanced PA, trendline channels, order flow, confluence mixed
