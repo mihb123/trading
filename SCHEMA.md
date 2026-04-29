@@ -1,7 +1,7 @@
 # Wiki Schema
 
 ## Domain
-[To be customized based on user's domain - e.g., "AI/ML research", "Personal knowledge", "Technical documentation"]
+Forex & Trading - Chiến lược giao dịch ngoại hối, phân tích kỹ thuật, Price Action, và quản lý rủi ro.
 
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `transformer-architecture.md`)
@@ -14,6 +14,7 @@
   at the end of paragraphs whose claims come from a specific source. This lets a reader trace each
   claim back without re-reading the whole raw file. Optional on single-source pages where the
   `sources:` frontmatter is enough.
+- **Language:** Pages viết bằng tiếng Việt, thuật ngữ chuyên môn giữ nguyên tiếng Anh trong ngoặc đơn.
 
 ## Frontmatter
 ```yaml
@@ -52,13 +53,11 @@ and flag drift when it has changed. Compute over the body only (everything after
 `---`), not the frontmatter itself.
 
 ## Tag Taxonomy
-[Define 10-20 top-level tags for the domain. Add new tags here BEFORE using them.]
-
-Example for AI/ML:
-- Models: model, architecture, benchmark, training
-- People/Orgs: person, company, lab, open-source
-- Techniques: optimization, fine-tuning, inference, alignment, data
-- Meta: comparison, timeline, controversy, prediction
+- **Phân tích kỹ thuật:** technical-analysis, price-action, candlesticks, chart-patterns, support-resistance, trend-analysis, market-structure, volume
+- **Chiến lược:** trading-strategy, multi-timeframe, scalping, swing-trading, day-trading, position-trading, breakout-trading, trend-following, mean-reversion
+- **Thị trường:** forex, crypto, stocks, commodities, indices
+- **Quản lý rủi ro:** risk-management, position-sizing, psychology, trading-plan
+- **Meta:** comparison, reference, checklist, beginner, advanced, controversy
 
 Rule: every tag on a page must appear in this taxonomy. If a new tag is needed,
 add it here first, then use it. This prevents tag sprawl.

@@ -18,3 +18,16 @@
 - Topic: Top-Down Analysis + Price Action in forex trading
 - Covers: timeframe hierarchy, price action patterns, confluence, risk management
 - Tags: forex, price-action, multi-timeframe, technical-analysis
+
+## [2026-04-30] ingest | Price Action & Candlestick Patterns Research
+- Sources ingested:
+  - raw/articles/wikipedia-price-action-trading.md (Wikipedia, 49K chars)
+  - raw/articles/wikipedia-candlestick-pattern.md (Wikipedia, 2.2K chars)
+  - raw/articles/tradingstrategyguides-price-action.md (TSG, extracted)
+- Updated: SCHEMA.md (domain + tag taxonomy)
+- Rewrote: concepts/price-action.md (full rewrite with high-quality content)
+- Created: concepts/candlestick-patterns.md (12+ patterns with ASCII art)
+- Created: entities/market-structure.md (was missing)
+- Created: comparisons/price-action-vs-indicators.md
+- Updated: index.md (6 total pages)
+- Tags: candlesticks, price-action, comparison, market-structure
