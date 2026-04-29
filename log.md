@@ -31,3 +31,14 @@
 - Created: comparisons/price-action-vs-indicators.md
 - Updated: index.md (6 total pages)
 - Tags: candlesticks, price-action, comparison, market-structure
+
+## [2026-04-30] ingest | Nial Fuller Price Action & Advanced Patterns
+- Sources ingested:
+  - raw/articles/priceaction-com-nial-fuller.md (PriceAction.com, Nial Fuller)
+  - 5/8 URLs blocked by Cloudflare/bot detection (Capital.com, CMC Markets, ForexFactory, Quora, QuantVPS)
+  - 2/8 URLs returned metadata only (TradingSetupsReview index, Scribd)
+- Created: concepts/fakey-pattern.md (Inside Bar False Breakout with ASCII diagram)
+- Created: concepts/price-action-confluence.md (scoring system, multi-TF, checklist)
+- Updated: concepts/price-action.md (added KISS philosophy section from Nial Fuller)
+- Updated: index.md (9 total pages)
+- New concepts: Fakey pattern types, confluence scoring system (12+ points = quality setup)

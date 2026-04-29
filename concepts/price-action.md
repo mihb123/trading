@@ -160,9 +160,34 @@ Kết hợp Price Action với [[multi-timeframe-forex]]:
 3. **Getting Started In Chart Patterns** - Thomas Bulkowski (Bách khoa mẫu hình)
 4. **Street Smarts** - Larry Connors & Linda Raschke (20+ chiến lược Price Action)
 
+## Triết lý "Keep It Simple Stupid" (KISS)
+
+Đây là triết lý cốt lõi của Price Action trading, được nhấn mạnh bởi Nial Fuller — một trong những chuyên gia Price Action hàng đầu thế giới (250,000+ độc giả/tháng, 30,000+ học viên từ 2008):^[raw/articles/priceaction-com-nial-fuller.md]
+
+**Nguyên tắc KISS:**
+- Chart **sạch** — không indicator, không đường kẻ rối mắt
+- Chỉ có nến trần (naked chart) + S/R levels + trendlines
+- Không tin tức, không dữ liệu kinh tế
+- Tập trung vào **price history 3-6 tháng gần nhất**
+
+**Lý do hiệu quả:**
+- Mọi yếu tố ảnh hưởng đến thị trường (tin tức, dữ liệu, tâm lý) đều đã được phản ánh vào giá
+- Phân tích 1 thứ (giá) tốt hơn phân tích 10 thứ (giá + 9 indicators)
+- Giảm analysis paralysis — càng ít thông tin, quyết định càng nhanh và chính xác
+
+**So sánh:**
+| | KISS Approach | Indicator Overload |
+|--|--------------|-------------------|
+| Chart | Nến + S/R + trendline | 5+ indicators, đường kẻ chồng chéo |
+| Quyết định | Dựa trên giá & context | Dựa trên indicator signals |
+| Số lượng setup | Ít, chọn lọc | Nhiều, dễ nhiễu |
+| Kết quả | Ổn định hơn dài hạn | Thất thường, khó duy trì |
+
 ## Xem thêm
 
 - [[candlestick-patterns]] - Chi tiết từng mô hình nến
 - [[multi-timeframe-forex]] - Kết hợp đa khung thời gian
 - [[market-structure]] - Cấu trúc thị trường và xu hướng
 - [[price-action-vs-indicators]] - So sánh với indicator-based trading
+- [[fakey-pattern]] - Mẫu hình Fakey (Inside Bar False Breakout)
+- [[price-action-confluence]] - Sự hội tụ tín hiệu trong Price Action
