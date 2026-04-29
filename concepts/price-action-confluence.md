@@ -3,8 +3,8 @@ title: Price Action Confluence - Sự Hội tụ Tín hiệu
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [price-action, trading-strategy, technical-analysis, forex, support-resistance, trend-analysis]
-sources: [raw/articles/priceaction-com-nial-fuller.md, raw/articles/tradingstrategyguides-price-action.md, concepts/price-action.md]
+tags: [price-action, trading-strategy, technical-analysis, forex, support-resistance, trend-analysis, confluence]
+sources: [raw/articles/priceaction-com-nial-fuller.md, raw/articles/tradingstrategyguides-price-action.md, raw/articles/admiral-confluence.md, raw/articles/ig-confluence.md, concepts/price-action.md]
 confidence: high
 ---
 
@@ -165,6 +165,9 @@ Nếu ≥ 5/7 tiêu chí được đánh dấu → vào lệnh. Nếu không →
 ❌ **Over-analysis**: Chờ quá nhiều yếu tố → không bao giờ vào lệnh  
 ❌ **Bỏ qua timeframe chính**: Chỉ nhìn H1/M15 mà quên D1  
 ❌ **Confluence sai**: 3 yếu tố cùng loại (3 MA cắt nhau) ≠ confluence thực sự  
+❌ **Bỏ qua trend**: Tín hiệu tại S/R nhưng ngược xu hướng chính — xác suất thấp
+
+> **3 bước confluence cốt lõi**: (1) Xu hướng HTF là gì? → (2) Vùng S/R quan trọng ở đâu? → (3) Tín hiệu PA tại vùng đó có xác nhận không? Nếu cả 3 khớp → setup chất lượng cao.^[raw/articles/admiral-confluence.md]^[raw/articles/ig-confluence.md]  
 ❌ **Không ghi chép**: Không track được setup nào thực sự có confluence tốt  
 
 ## Kết luận

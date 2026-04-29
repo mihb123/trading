@@ -100,3 +100,29 @@
 - Updated: index.md (11 pages)
 - Keywords: "pullback trading retracement entry" "trend continuation patterns"
 - Note: 5/10 vòng chưa hoàn thành do timeout subagent. Cần chạy thêm: S/R zones, advanced PA, trendline channels, order flow, confluence mixed
+
+## [2026-04-30] ingest | Vòng 5-10: Hoàn thành trực tiếp (không subagent)
+- Tận dụng bài Rayner Teo (tradingwithrayner.com) cho trend following (832 lines, 62K chars)
+- Dùng r.jina.ai extract từ Admiral Markets, IG, Forex.com, Rayner Teo, DailyFX
+=== VONG 5 ===
+- raw/articles/rayner-sr-trading-strategy.md [SUCCESS 50K] - Rayner Teo S/R advanced guide
+- raw/articles/dailyfx-sr.md [SUCCESS] - DailyFX S/R education
+- Created: concepts/support-resistance-zones.md
+=== VONG 6 ===
+- raw/articles/admiral-advanced-candlestick.md [SUCCESS 21K] - Admiral Markets advanced candlestick
+- raw/articles/ig-price-action-trading.md [SUCCESS 34K] - IG price action strategies
+- Created: concepts/advanced-price-action.md
+=== VONG 7 ===
+- raw/articles/rayner-teo-trend-trading-strategy.md [SUCCESS 62K] - Trend trading guide (832 lines)
+- Created: concepts/trend-following.md
+=== VONG 8 ===
+- raw/articles/forex-com-technical-analysis.md [SUCCESS 26K] - Forex.com technical analysis
+- raw/articles/admiral-trendlines.md [SUCCESS 22K] - Admiral Markets trend lines
+- raw/articles/ig-trend-trading.md [SUCCESS 34K] - IG trend trading
+- Created: concepts/trendlines-channels.md
+=== VONG 10 ===
+- raw/articles/admiral-confluence.md [SUCCESS 22K] - Admiral Markets confluence
+- raw/articles/ig-confluence.md [SUCCESS 34K] - IG confluence guide
+- Updated: concepts/price-action-confluence.md (3-step confluence framework)
+- Updated: index.md (15 pages, +4 new concepts)
+- Total: 10 new raw articles, 4 new concept pages, 1 updated page, ~192K chars extracted
