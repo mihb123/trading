@@ -167,3 +167,18 @@
   - S/R: H4 ưu tiên, D1 bổ sung
   - Position mgmt: 1R BE, 2R partial close 50%, 3R+ trailing
 - Synthesis từ: trinity-confluence-idea, multi-timeframe-forex, trend-following, pullback-retracement, support-resistance-zones, price-action
+
+## [2026-04-30] ingest | GBP/USD (The Cable) — Nghiên cứu chuyên sâu
+- Sources captured:
+  - trading/raw/articles/fastcashforex-gbpusd-trading-guide.md [SUCCESS] (~6K chars) — FastCashForex: đặc điểm, 5 chiến lược, session, correlation, fundamental, mistakes
+  - trading/raw/articles/daytrading-gbpusd-guide.md [SUCCESS] (~3K chars) — DayTrading.com: breakout strategy, EMA crossover 4H, session timing, history
+- Created: entities/gbpusd-cable.md (264 lines) — Entity page toàn diện về GBP/USD
+- Updated: index.md (18 pages, +1 entity)
+- Key takeaways:
+  - GBP/USD = 60% biến động hơn EUR/USD, 100-150 pips/ngày
+  - Trending 40-50% thời gian → trend following cực hiệu quả
+  - London session (3h-12h ET) và LDN-NY overlap (8h-12h ET) = sweet spot
+  - SL M15 cho GBP/USD: 35-50 pips (rộng hơn EUR/USD)
+  - Các mức tâm lý chính: 1.4000, 1.3500, 1.3000, 1.2500, 1.2000
+  - 5 sai lầm: đánh giá thấp volatility, trade ngày nghỉ UK, chống trend, bỏ qua chính trị, over-leverage
+  - Correlation: +0.85-0.90 với EUR/USD → tránh giữ cùng lúc cùng hướng

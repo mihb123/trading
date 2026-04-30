@@ -2,10 +2,11 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 17
+> Last updated: 2026-04-30 | Total pages: 18
 
 ## Entities
 
+- [[gbpusd-cable]] - GBP/USD (The Cable): đặc điểm, chiến lược, session, spread, correlation — cặp tiền chính
 - [[market-structure]] - Phân tích cấu trúc thị trường: trend, range, breakout, pullback
 
 ## Concepts
