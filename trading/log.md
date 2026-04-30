@@ -194,3 +194,20 @@
 - INFO (noted, no action):
   - 7 large pages >200 lines — previously noted, MQL5 files are code-heavy by nature
   - 8 tags heavily used across pages — all already in taxonomy after prior additions
+
+## [2026-04-30] synthesize | Cable M15 — Chiến lược GBP/USD Tối ưu
+- Created: trading/strategies/cable-m15-strategy.md (340+ lines) — Ý tưởng chiến lược Cable-specific
+- Updated: trading/index.md (19 pages, +1 strategy)
+- Key Cable-specific improvements over M15 Trend Confluence generic:
+  - Session: Bắt buộc London, ưu tiên overlap. Cấm Asian, cấm UK holidays, cấm thứ 6 chiều
+  - SL: 35-50 pips cố định (thay vì ATR-based). TP1: 70-100 pips, TP2: 105-150 pips
+  - Spread: ≤ 3 pips (Cable-specific, thay vì 30 points chung)
+  - Round numbers: 00 và 50 được chú trọng đặc biệt (GBP/USD tôn trọng mạnh)
+  - News filter: Thêm UK data (4h30 ET: BoE, CPI, GDP, Employment)
+  - Correlation check: Cảnh báo nếu đang giữ EUR/USD cùng hướng (+0.85-0.90)
+  - UK bank holidays: Check mỗi sáng
+  - 5 "tuyệt chiêu" Cable: UK holiday check, 1.3000 là vùng S/R vua, tránh EUR/USD overlap, BoE là vua tin, Cable ghét thứ 6
+  - Ví dụ thực tế 1 ngày giao dịch Cable (09:00-15:30 ET)
+  - So sánh cạnh nhau với M15 Trend Confluence chung
+  - Checklist 30 giây mỗi sáng + trước mỗi lệnh
+  - Ngôn ngữ đơn giản, hình ảnh hóa, dễ hiểu (3 câu hỏi → 3 lớp lọc)

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 18
+> Last updated: 2026-04-30 | Total pages: 19
 
 ## Entities
 
@@ -30,5 +30,6 @@
 ## Queries
 - [[m15-trend-confluence-idea]] - Chiến lược M15 Trend Confluence cải tiến: H4+H1 trend → M15 entry, R:R ≥ 1:2, daily loss 5%
 - [[m15-trend-confluence-mql5]] - Hướng dẫn implement MQL5: H4+H1+M15, R:R cứng, daily drawdown limit
+- [[cable-m15-strategy]] - Cable M15: Chiến lược GBP/USD tối ưu — H4→H1→M15, session LDN, số pip cụ thể
 - [[trinity-confluence-idea]] - Ý tưởng giao dịch Trinity Confluence (3 lớp lọc)
 - [[trinity-confluence-mql5]] - Hướng dẫn implement MQL5 đầy đủ
