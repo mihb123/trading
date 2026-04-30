@@ -318,7 +318,7 @@ Kết hợp mô hình nến với [[multi-timeframe-forex]]:
 3. **H1/M30**: Chờ mô hình nến nhỏ hơn xác nhận entry (Pin Bar tại vùng đó)
 
 ## Xem thêm
-
+- [[advanced-price-action]] - Kỹ thuật Price Action nâng cao
 - [[price-action]] - Phương pháp Price Action tổng quan
 - [[multi-timeframe-forex]] - Chiến lược đa khung thời gian
 - [[market-structure]] - Cấu trúc thị trường

@@ -135,6 +135,9 @@ Nếu bạn muốn linh hoạt hơn "tất cả hoặc không có gì":
 - Spread > 30 points
 - Asian session (thanh khoản thấp)
 
+## Implement MQL5
+- [[trinity-confluence-mql5]] - Hướng dẫn implement MQL5 đầy đủ
+
 ## Liên kết với Wiki
 
 - [[trend-following]] — Trend filter chi tiết

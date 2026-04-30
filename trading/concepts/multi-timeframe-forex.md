@@ -253,4 +253,3 @@ Ba lệnh tưởng "độc lập" (long EUR/USD, long GBP/USD, short USD/CHF) th
 
 **Lưu ý**: Phương pháp này đòi hỏi kỷ luật cao và thời gian làm quen. Đừng vào vàng giao dịch real money trước khi đạt tỷ lệ thắng đều trên demo.
 
-[[forex]] [[technical-analysis]] [[price-action]] [[trading-strategy]]

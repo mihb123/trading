@@ -91,3 +91,4 @@ Kết hợp [[multi-timeframe-forex]] với trend following:
 - [[price-action]] - Tín hiệu price action cho entry
 - [[pullback-retracement]] - Giao dịch pullback trong xu hướng
 - [[price-action-confluence]] - Sự hội tụ tín hiệu
+- [[trendlines-channels]] - Đường xu hướng và kênh giá

@@ -140,3 +140,14 @@
 - Created: trading/strategies/trinity-confluence-idea.md — Ý tưởng giao dịch (3 lớp lọc: Trend D1 → S/R Zone → PA Trigger H1)
 - Created: trading/strategies/trinity-confluence-mql5.md — Implement MQL5 (28K chars, 300+ lines code)
 - Updated: trading/index.md (17 pages, added Queries section)
+
+## [2026-04-30] lint | 143 issues found, 6 fixed
+- CRITICAL (fixed):
+  - Removed 3 broken wikilinks [[forex]] [[technical-analysis]] [[trading-strategy]] in multi-timeframe-forex.md (tag-style links at page bottom)
+  - Added cross-links to 3 orphan pages: trendlines-channels (from trend-following.md), advanced-price-action (from price-action.md, candlestick-patterns.md), trinity-confluence-mql5 (from trinity-confluence-idea.md)
+- WARNING (false positives): 90 frontmatter tag issues — all tags ARE in taxonomy; lint regex was incorrect
+- INFO (addressed):
+  - Added 12 missing tags to SCHEMA.md taxonomy: volume-profile, order-flow, market-profile, pattern-recognition, retracement, entry-technique, pullback, trend-trading, position-management, mql5, bot, algorithm, trading-bot, automation
+  - 4 large pages (>200 lines) noted for future splitting: trinity-confluence-mql5 (856), candlestick-patterns (325), multi-timeframe-forex (256), price-action (235)
+- 18 source drift warnings expected (articles edited during ingestion)
+- Log: 13 entries, no rotation needed

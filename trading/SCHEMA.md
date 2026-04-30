@@ -57,7 +57,10 @@ and flag drift when it has changed. Compute over the body only (everything after
 - **Chiến lược:** trading-strategy, multi-timeframe, scalping, swing-trading, day-trading, position-trading, breakout-trading, trend-following, mean-reversion
 - **Thị trường:** forex, crypto, stocks, commodities, indices
 - **Quản lý rủi ro:** risk-management, position-sizing, psychology, trading-plan
-- **Meta:** comparison, reference, checklist, beginner, advanced, controversy
+- **Phân tích kỹ thuật bổ sung:** volume-profile, order-flow, market-profile, pattern-recognition, retracement
+- **Kỹ thuật vào lệnh:** entry-technique, pullback, trend-trading, position-management
+- **Implementation:** mql5, bot, algorithm, trading-bot, automation
+- **Meta:** comparison, reference, checklist, beginner, advanced, controversy, confluence
 
 Rule: every tag on a page must appear in this taxonomy. If a new tag is needed,
 add it here first, then use it. This prevents tag sprawl.
