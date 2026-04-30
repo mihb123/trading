@@ -227,3 +227,4 @@ Daily loss limit: 5% (giữ nguyên)
 - [[price-action]] — Tín hiệu PA trên GBP/USD
 - [[pullback-retracement]] — Pullback entry trong trend GBP/USD
 - [[price-action-confluence]] — Confluence scoring cho Cable
+- [[market-structure]] — Cấu trúc thị trường: HH/HL trên GBP/USD

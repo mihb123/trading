@@ -55,7 +55,7 @@ and flag drift when it has changed. Compute over the body only (everything after
 ## Tag Taxonomy
 - **Phân tích kỹ thuật:** technical-analysis, price-action, candlesticks, chart-patterns, support-resistance, trend-analysis, market-structure, volume
 - **Chiến lược:** trading-strategy, multi-timeframe, scalping, swing-trading, day-trading, position-trading, breakout-trading, trend-following, mean-reversion
-- **Thị trường:** forex, crypto, stocks, commodities, indices
+- **Thị trường:** forex, crypto, stocks, commodities, indices, volatility
 - **Quản lý rủi ro:** risk-management, position-sizing, psychology, trading-plan
 - **Phân tích kỹ thuật bổ sung:** volume-profile, order-flow, market-profile, pattern-recognition, retracement
 - **Kỹ thuật vào lệnh:** entry-technique, pullback, trend-trading, position-management

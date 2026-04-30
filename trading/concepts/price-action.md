@@ -234,3 +234,4 @@ Theo Capital.com: False breakout xảy ra khi giá tạm thời vượt qua S/R 
 - [[fakey-pattern]] - Mẫu hình Fakey (Inside Bar False Breakout)
 - [[price-action-confluence]] - Sự hội tụ tín hiệu trong Price Action
 - [[advanced-price-action]] - Kỹ thuật Price Action nâng cao
+- [[gbpusd-cable]] - Đặc điểm cặp GBP/USD (Cable)

@@ -182,3 +182,15 @@
   - Các mức tâm lý chính: 1.4000, 1.3500, 1.3000, 1.2500, 1.2000
   - 5 sai lầm: đánh giá thấp volatility, trade ngày nghỉ UK, chống trend, bỏ qua chính trị, over-leverage
   - Correlation: +0.85-0.90 với EUR/USD → tránh giữ cùng lúc cùng hướng
+
+## [2026-04-30] lint | 63 issues found, 3 fixed
+- CRITICAL (fixed):
+  - Orphan gbpusd-cable: Added cross-links from price-action.md and multi-timeframe-forex.md (+1 outbound from gbpusd-cable to market-structure)
+- WARNING (fixed):
+  - Added 'volatility' tag to SCHEMA.md taxonomy (was genuinely missing)
+- WARNING (false positives):
+  - 48 tag warnings for tags already in taxonomy — lint regex broken (same issue as previous lint)
+  - Tags incorrectly flagged: forex, technical-analysis, trading-strategy, entry-technique, risk-management, comparison, mql5
+- INFO (noted, no action):
+  - 7 large pages >200 lines — previously noted, MQL5 files are code-heavy by nature
+  - 8 tags heavily used across pages — all already in taxonomy after prior additions
