@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 15
+> Last updated: 2026-04-30 | Total pages: 17
 
 ## Entities
 
@@ -27,5 +27,7 @@
 - [[price-action-vs-indicators]] - So sánh chi tiết Price Action vs Indicator-Based Trading
 
 ## Queries
+- [[m15-trend-confluence-idea]] - Chiến lược M15 Trend Confluence cải tiến: H4+H1 trend → M15 entry, R:R ≥ 1:2, daily loss 5%
+- [[m15-trend-confluence-mql5]] - Hướng dẫn implement MQL5: H4+H1+M15, R:R cứng, daily drawdown limit
 - [[trinity-confluence-idea]] - Ý tưởng giao dịch Trinity Confluence (3 lớp lọc)
 - [[trinity-confluence-mql5]] - Hướng dẫn implement MQL5 đầy đủ

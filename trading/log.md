@@ -151,3 +151,19 @@
   - 4 large pages (>200 lines) noted for future splitting: trinity-confluence-mql5 (856), candlestick-patterns (325), multi-timeframe-forex (256), price-action (235)
 - 18 source drift warnings expected (articles edited during ingestion)
 - Log: 13 entries, no rotation needed
+
+## [2026-04-30] synthesize | M15 Trend Confluence — Chiến lược cải tiến (H4+H1+M15)
+- Created: trading/strategies/m15-trend-confluence-idea.md (264 lines) — Ý tưởng chiến lược: 3 lớp lọc H4 trend + H4/D1 S/R + M15 PA trigger
+- Created: trading/strategies/m15-trend-confluence-mql5.md (~850 lines) — Full MQL5 implementation
+- Updated: trading/index.md (17 pages, +2 strategy pages)
+- Key improvements over Trinity gốc:
+  - Trend filter: D1 → H4+H1 (bắt xu hướng nhanh hơn, nhiều cơ hội hơn)
+  - Entry timeframe: H1 → M15 (SL ngắn hơn, R:R tốt hơn)
+  - R:R cứng ≥ 1:2 (không ngoại lệ)
+  - Daily loss limit 5% (miễn cho tk < $200)
+  - Consecutive loss tracking: giảm risk sau 2 lệnh thua, stop sau 4
+  - 4 loại PA M15: Engulfing, Pin Bar, Inside Bar Breakout, Momentum Candle
+  - H1 confirmation: cùng hướng H4 + MA20 + ATR alive check
+  - S/R: H4 ưu tiên, D1 bổ sung
+  - Position mgmt: 1R BE, 2R partial close 50%, 3R+ trailing
+- Synthesis từ: trinity-confluence-idea, multi-timeframe-forex, trend-following, pullback-retracement, support-resistance-zones, price-action
