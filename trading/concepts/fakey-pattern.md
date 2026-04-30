@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [price-action, candlesticks, trading-strategy, forex, breakout-trading, technical-analysis]
-sources: [raw/articles/priceaction-com-nial-fuller.md, concepts/price-action.md]
+sources: [trading/raw/articles/priceaction-com-nial-fuller.md, trading/concepts/price-action.md]
 confidence: high
 ---
 
@@ -12,7 +12,7 @@ confidence: high
 
 ## Định nghĩa
 
-Fakey pattern (còn gọi là **Inside Bar False Breakout**) là một mẫu hình Price Action gồm 2-3 nến, trong đó một Inside Bar bị phá vỡ (breakout) nhưng ngay sau đó giá đảo chiều và quay trở lại bên trong phạm vi (range) của nến mẹ (mother bar).^[raw/articles/priceaction-com-nial-fuller.md]
+Fakey pattern (còn gọi là **Inside Bar False Breakout**) là một mẫu hình Price Action gồm 2-3 nến, trong đó một Inside Bar bị phá vỡ (breakout) nhưng ngay sau đó giá đảo chiều và quay trở lại bên trong phạm vi (range) của nến mẹ (mother bar).^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 Tên gọi "Fakey" xuất phát từ "fake" (giả) — mẫu hình này **đánh lừa** trader vì trông giống như breakout thực sự nhưng thực chất là bẫy (trap).
 
@@ -77,7 +77,7 @@ Fakey pattern khai thác **tâm lý đám đông** và **bẫy thanh khoản** (
 
 ### 1. Fakey Thuận Xu hướng (With-Trend Fakey)
 
-Đây là setup **mạnh nhất** và đáng tin cậy nhất:^[raw/articles/priceaction-com-nial-fuller.md]
+Đây là setup **mạnh nhất** và đáng tin cậy nhất:^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 - **Bullish Fakey trong Uptrend**: Thị trường trong uptrend, xuất hiện fakey giảm (false break down) → buy
 - **Bearish Fakey trong Downtrend**: Thị trường trong downtrend, xuất hiện fakey tăng (false break up) → sell
@@ -126,7 +126,7 @@ Fakey pattern khai thác **tâm lý đám đông** và **bẫy thanh khoản** (
 
 ## Confluence cho Fakey
 
-Fakey có xác suất thắng cao nhất khi hội tụ với:^[raw/articles/priceaction-com-nial-fuller.md]
+Fakey có xác suất thắng cao nhất khi hội tụ với:^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 ✅ **Xu hướng rõ ràng** — fakey thuận xu hướng mạnh gấp 3 lần fakey ngược xu hướng  
 ✅ **Key S/R level** — fakey tại vùng giá quan trọng trên D1/H4  

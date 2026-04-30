@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [price-action, trading-strategy, technical-analysis, forex, support-resistance, trend-analysis, confluence]
-sources: [raw/articles/priceaction-com-nial-fuller.md, raw/articles/tradingstrategyguides-price-action.md, raw/articles/admiral-confluence.md, raw/articles/ig-confluence.md, concepts/price-action.md]
+sources: [trading/raw/articles/priceaction-com-nial-fuller.md, trading/raw/articles/tradingstrategyguides-price-action.md, trading/raw/articles/admiral-confluence.md, trading/raw/articles/ig-confluence.md, trading/concepts/price-action.md]
 confidence: high
 ---
 
@@ -12,11 +12,11 @@ confidence: high
 
 ## Định nghĩa
 
-**Confluence** (hội tụ) trong Price Action là sự tập trung của **nhiều yếu tố kỹ thuật** cùng xuất hiện tại một vùng giá, tạo ra tín hiệu giao dịch có xác suất thắng cao hơn.^[raw/articles/priceaction-com-nial-fuller.md]
+**Confluence** (hội tụ) trong Price Action là sự tập trung của **nhiều yếu tố kỹ thuật** cùng xuất hiện tại một vùng giá, tạo ra tín hiệu giao dịch có xác suất thắng cao hơn.^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 Nói đơn giản: **1 tín hiệu đơn lẻ = rủi ro. 3-4 tín hiệu hội tụ = cơ hội.**
 
-Như Nial Fuller đã nói: *"Every pin bar, inside bar, etc. is not created equal. Depending on where a particular price action signal forms, you may not want to trade it or you may want to jump on it without hesitation."*^[raw/articles/priceaction-com-nial-fuller.md]
+Như Nial Fuller đã nói: *"Every pin bar, inside bar, etc. is not created equal. Depending on where a particular price action signal forms, you may not want to trade it or you may want to jump on it without hesitation."*^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 ## Nguyên lý "Where > What"
 
@@ -118,7 +118,7 @@ TỔNG: 4 điểm → BỎ QUA
 
 ## Multi-Timeframe Confluence
 
-Confluence mạnh nhất đến từ sự **đồng thuận giữa các timeframe**:^[raw/articles/priceaction-com-nial-fuller.md]
+Confluence mạnh nhất đến từ sự **đồng thuận giữa các timeframe**:^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 ```
 W1:  Uptrend ─────────────►  XU HƯỚNG CHÍNH TĂNG
@@ -161,18 +161,18 @@ Nếu ≥ 5/7 tiêu chí được đánh dấu → vào lệnh. Nếu không →
 ## Lỗi Thường Gặp khi Dùng Confluence
 
 ❌ **Ép confluence**: Cố tình vẽ thêm S/R, trendline không có thật để "tạo" confluence  
-❌ **S/R không confluence đa timeframe**: Level chỉ xuất hiện trên 1 khung (ví dụ M15) nhưng không có trên D1 — độ tin cậy thấp^[raw/articles/quantvps-price-action-guide.md]
+❌ **S/R không confluence đa timeframe**: Level chỉ xuất hiện trên 1 khung (ví dụ M15) nhưng không có trên D1 — độ tin cậy thấp^[trading/raw/articles/quantvps-price-action-guide.md]
 ❌ **Over-analysis**: Chờ quá nhiều yếu tố → không bao giờ vào lệnh  
 ❌ **Bỏ qua timeframe chính**: Chỉ nhìn H1/M15 mà quên D1  
 ❌ **Confluence sai**: 3 yếu tố cùng loại (3 MA cắt nhau) ≠ confluence thực sự  
 ❌ **Bỏ qua trend**: Tín hiệu tại S/R nhưng ngược xu hướng chính — xác suất thấp
 
-> **3 bước confluence cốt lõi**: (1) Xu hướng HTF là gì? → (2) Vùng S/R quan trọng ở đâu? → (3) Tín hiệu PA tại vùng đó có xác nhận không? Nếu cả 3 khớp → setup chất lượng cao.^[raw/articles/admiral-confluence.md]^[raw/articles/ig-confluence.md]  
+> **3 bước confluence cốt lõi**: (1) Xu hướng HTF là gì? → (2) Vùng S/R quan trọng ở đâu? → (3) Tín hiệu PA tại vùng đó có xác nhận không? Nếu cả 3 khớp → setup chất lượng cao.^[trading/raw/articles/admiral-confluence.md]^[trading/raw/articles/ig-confluence.md]  
 ❌ **Không ghi chép**: Không track được setup nào thực sự có confluence tốt  
 
 ## Kết luận
 
-> *"The best price action signals are those that form at 'confluent' points in the market... The more confluent factors a price action signal has behind it, the higher-probability signal it is considered to be."* — Nial Fuller^[raw/articles/priceaction-com-nial-fuller.md]
+> *"The best price action signals are those that form at 'confluent' points in the market... The more confluent factors a price action signal has behind it, the higher-probability signal it is considered to be."* — Nial Fuller^[trading/raw/articles/priceaction-com-nial-fuller.md]
 
 Confluence không phải là "công thức thần kỳ" — nó là **bộ lọc** giúp bạn:
 - Loại bỏ 70-80% tín hiệu nhiễu

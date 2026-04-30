@@ -4,7 +4,7 @@ type: comparison
 created: 2026-04-30
 updated: 2026-04-30
 tags: [comparison, price-action, technical-analysis, trading-strategy, forex]
-sources: [raw/articles/wikipedia-price-action-trading.md, raw/articles/tradingstrategyguides-price-action.md, concepts/price-action.md]
+sources: [trading/raw/articles/wikipedia-price-action-trading.md, trading/raw/articles/tradingstrategyguides-price-action.md, trading/concepts/price-action.md]
 confidence: medium
 ---
 
@@ -34,7 +34,7 @@ Có hai trường phái chính trong phân tích kỹ thuật: **Price Action** 
 ## Ưu điểm của Price Action
 
 ### 1. Không lag — Real-time
-Indicators (MACD, RSI, MA) đều tính từ dữ liệu quá khứ. Khi MACD cắt lên, giá đã đi xa. Price Action cho bạn tín hiệu NGAY KHI nến đóng.^[raw/articles/wikipedia-price-action-trading.md]
+Indicators (MACD, RSI, MA) đều tính từ dữ liệu quá khứ. Khi MACD cắt lên, giá đã đi xa. Price Action cho bạn tín hiệu NGAY KHI nến đóng.^[trading/raw/articles/wikipedia-price-action-trading.md]
 
 ### 2. Hiểu được "tại sao"
 Price Action giải thích tâm lý đằng sau chuyển động giá — không chỉ "mua vì RSI < 30". Bạn thấy được cuộc chiến giữa bulls và bears.
@@ -48,7 +48,7 @@ Institutional traders không dùng RSI để quyết định. Họ để lại d
 ## Nhược điểm của Price Action
 
 ### 1. Tính chủ quan cao
-2 trader cùng nhìn 1 chart có thể thấy 2 tín hiệu khác nhau. Kinh nghiệm quyết định độ chính xác.^[raw/articles/wikipedia-price-action-trading.md]
+2 trader cùng nhìn 1 chart có thể thấy 2 tín hiệu khác nhau. Kinh nghiệm quyết định độ chính xác.^[trading/raw/articles/wikipedia-price-action-trading.md]
 
 ### 2. Khó học ban đầu
 Không có công thức "mua khi X > Y". Cần hàng trăm giờ screen time để nhận diện pattern tốt.
@@ -71,7 +71,7 @@ Indicator hữu ích trong các trường hợp:
 
 ## Cách Kết hợp Tốt nhất
 
-Phương pháp tối ưu là dùng Price Action làm **primary analysis** và indicator làm **filter**:^[raw/articles/tradingstrategyguides-price-action.md]
+Phương pháp tối ưu là dùng Price Action làm **primary analysis** và indicator làm **filter**:^[trading/raw/articles/tradingstrategyguides-price-action.md]
 
 ```
 QUY TRÌNH:

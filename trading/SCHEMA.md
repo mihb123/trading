@@ -10,7 +10,7 @@ Forex & Trading - Chiến lược giao dịch ngoại hối, phân tích kỹ th
 - When updating a page, always bump the `updated` date
 - Every new page must be added to `index.md` under the correct section
 - Every action must be appended to `log.md`
-- **Provenance markers:** On pages that synthesize 3+ sources, append `^[raw/articles/source-file.md]`
+- **Provenance markers:** On pages that synthesize 3+ sources, append `^[trading/raw/articles/source-file.md]`
   at the end of paragraphs whose claims come from a specific source. This lets a reader trace each
   claim back without re-reading the whole raw file. Optional on single-source pages where the
   `sources:` frontmatter is enough.
@@ -24,7 +24,7 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: entity | concept | comparison | query | summary
 tags: [from taxonomy below]
-sources: [raw/articles/source-name.md]
+sources: [trading/raw/articles/source-name.md]
 # Optional quality signals:
 confidence: high | medium | low        # how well-supported the claims are
 contested: true                        # set when the page has unresolved contradictions
@@ -104,10 +104,10 @@ When new information conflicts with existing content:
 Khi người dùng cung cấp một source (URL, file, paste), tích hợp nó vào wiki:
 
 ① **Capture raw source:**
-   - URL → dùng `web_extract` để lấy markdown, lưu vào `raw/articles/`
+   - URL → dùng `web_extract` để lấy markdown, lưu vào `trading/raw/articles/`
    - PDF → dùng `web_extract` (xử lý PDF), lưu vào `raw/papers/`
    - Text dán → lưu vào thư mục `raw/` tương ứng
-   - Đặt tên file mô tả: `raw/articles/karpathy-llm-wiki-2026.md`
+   - Đặt tên file mô tả: `trading/raw/articles/karpathy-llm-wiki-2026.md`
    - **Thêm frontmatter raw** (`source_url`, `ingested`, `sha256` của body).
      Khi re-ingest cùng URL: recompute sha256, so sánh với giá trị lưu — skip nếu giống,
      flag drift nếu khác. Điều này đủ rẻ để làm mỗi lần re-ingest và bắt sự thay đổi âm thầm của source.
@@ -116,7 +116,7 @@ Khi người dùng cung cấp một source (URL, file, paste), tích hợp nó v
    (Skip trong context tự động/cron — đi thẳng đến bước ③)
 
 ③ **Check existing content** — search index.md và dùng `search_files` để tìm
-   các pages đã có cho các entities/concepts được nhắc. Đây là sự khác biệt
+   các pages đã có cho các trading/entities/concepts được nhắc. Đây là sự khác biệt
    giữa một wiki đang phát triển và một đống nội dung trùng lặp.
 
 ④ **Viết hoặc update wiki pages:**
@@ -127,7 +127,7 @@ Khi người dùng cung cấp một source (URL, file, paste), tích hợp nó v
    - **Cross-reference:** Mỗi page mới hoặc update phải có ít nhất 2 wikilinks
      đến các pages khác. Kiểm tra các pages hiện có có link back hay không.
    - **Tags:** Chỉ dùng tags từ taxonomy trong SCHEMA.md
-   - **Provenance:** Trên pages tổng hợp 3+ sources, thêm `^[raw/articles/source.md]`
+   - **Provenance:** Trên pages tổng hợp 3+ sources, thêm `^[trading/raw/articles/source.md]`
      markers vào cuối các đoạn mà claims đến từ source cụ thể.
    - **Confidence:** Đối với claims nhiều ý kiến, nhanh thay đổi, hoặc single-source,
      set `confidence: medium` hoặc `low`. Đừng đánh dấu `high` trừ khi claim được
@@ -155,7 +155,7 @@ Khi người dùng hỏi một câu hỏi về domain của wiki:
 ④ **Tổng hợp câu trả lời** từ kiến thức đã biên dịch. Trích dẫn các wiki pages
    bạn đã dùng: "Dựa trên [[page-a]] và [[page-b]]..."
 ⑤ **Lưu các câu trả lời có giá trị** — nếu câu trả lời là một phân tích so sánh sâu,
-   một deep dive, hoặc một synthesis mới, tạo một page trong `queries/` hoặc `comparisons/`.
+   một deep dive, hoặc một synthesis mới, tạo một page trong `queries/` hoặc `trading/comparisons/`.
    Đừng lưu các lookups tầm thường — chỉ lưu các câu trả lời tốn công tái-derive.
 ⑥ **Update log.md** với query và việc nó có được lưu hay không.
 
@@ -168,7 +168,7 @@ Khi người dùng yêu cầu lint, health-check, hoặc audit wiki:
 # Dùng execute_code để scan — programmatic qua tất cả wiki pages
 import os, re
 wiki = "<WIKI_PATH>"
-# Scan tất cả .md files trong entities/, concepts/, comparisons/, queries/
+# Scan tất cả .md files trong trading/entities/, trading/concepts/, trading/comparisons/, queries/
 # Extract tất cả [[wikilinks]] — build inbound link map
 # Pages với zero inbound links là orphans
 ```
@@ -210,10 +210,25 @@ wiki = "<WIKI_PATH>"
 
 ## Working with the Wiki
 
+### Multi-Topic Structure
+
+```
+wiki/                          # WIKI_PATH
+├── README.md                  # Topic catalog
+├── trading/                   # Current topic
+│   ├── SCHEMA.md / index.md / log.md
+│   ├── raw/ / concepts/ / entities/ / comparisons/
+└── future-topic/              # Next topic (same structure)
+```
+
+Mỗi topic có SCHEMA.md, index.md, log.md riêng. Khi làm việc với topic nào, set TOPIC tương ứng.
+
 ### Searching
 
 ```bash
-# Tìm pages theo content
+WIKI="${WIKI_PATH:-$HOME/Documents/wiki}"
+TOPIC="trading"  # Thay đổi khi làm topic khác
+TOPIC_DIR="$WIKI/$TOPIC"
 search_files "transformer" path="$WIKI" file_glob="*.md"
 
 # Tìm pages theo filename
@@ -240,7 +255,7 @@ Khi ingest nhiều sources cùng lúc, batch các updates:
 
 Khi content bị thay thế hoàn toàn hoặc scope thay đổi:
 1. Tạo `_archive/` nếu chưa có
-2. Di chuyển page đến `_archive/` với path gốc (ví dụ `_archive/entities/old-page.md`)
+2. Di chuyển page đến `_archive/` với path gốc (ví dụ `_archive/trading/entities/old-page.md`)
 3. Xóa khỏi `index.md`
 4. Update các pages có link đến nó — thay wikilink bằng plain text + "(archived)"
 5. Log action archive
@@ -258,16 +273,19 @@ Thư mục wiki hoạt động như một Obsidian vault:
 - Enable "Wikilinks" trong Obsidian settings
 - Cài đặt plugin Dataview cho các queries như `TABLE tags FROM "entities" WHERE contains(tags, "company")`
 
-Nếu dùng skill Obsidian cùng lúc, set `OBSIDIAN_VAULT_PATH` giống như wiki path.
+Nếu dùng skill Obsidian cùng lúc, set `OBSIDIAN_VAULT_PATH` trỏ đến root `$WIKI_PATH` (không phải topic con). Obsidian sẽ hiển thị tất cả topics cùng lúc.
 
 ### Ghi chú Git
 origin  git@github.com:mihb123/trading.git
-source: cd $WIKI_PATH
-- check status: "git status"
-- commit change: "git commit -m "<message>""
-- push code: git push origin main
-- check file changes: "git add --all && git diff --cached"
-- check changes and generate commit message and push code after having new commit
+```bash
+WIKI_DIR="${WIKI_PATH:-$HOME/Documents/wiki}"
+cd "$WIKI_DIR"
+git status
+git add --all
+git diff --cached
+git commit -m "trading: <message>"
+git push origin main
+```
 
 ## Pitfalls
 

@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [forex, price-action, multi-timeframe, trading-strategy, technical-analysis, crypto]
-sources: [raw/articles/multi-timeframe-forex.md, raw/articles/chartsnipe-mtf-forex-guide.md, raw/articles/forexmechanics-mtf-analysis.md, raw/articles/ttrades-top-down-analysis.md, raw/articles/tradingsetupsreview-dual-tf-sma.md]
+sources: [trading/raw/articles/multi-timeframe-forex.md, trading/raw/articles/chartsnipe-mtf-forex-guide.md, trading/raw/articles/forexmechanics-mtf-analysis.md, trading/raw/articles/ttrades-top-down-analysis.md, trading/raw/articles/tradingsetupsreview-dual-tf-sma.md]
 confidence: high
 ---
 

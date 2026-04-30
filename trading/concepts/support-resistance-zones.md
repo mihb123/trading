@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [support-resistance, technical-analysis, price-action, trading-strategy, market-structure]
-sources: [raw/articles/rayner-sr-trading-strategy.md, raw/articles/dailyfx-sr.md]
+sources: [trading/raw/articles/rayner-sr-trading-strategy.md, trading/raw/articles/dailyfx-sr.md]
 confidence: high
 ---
 

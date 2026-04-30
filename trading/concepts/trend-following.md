@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [trading-strategy, trend-analysis, market-structure, technical-analysis, price-action, forex]
-sources: [raw/articles/rayner-teo-trend-trading-strategy.md, concepts/market-structure.md]
+sources: [trading/raw/articles/rayner-teo-trend-trading-strategy.md, trading/concepts/market-structure.md]
 confidence: high
 ---
 
@@ -12,7 +12,7 @@ confidence: high
 
 ## Định nghĩa
 
-**Trend Following** (giao dịch theo xu hướng) là chiến lược mua khi giá đang trong uptrend và bán khi giá đang trong downtrend. Nguyên lý cốt lõi: xu hướng tồn tại nhờ lòng tham và nỗi sợ của con người — khi có tham lam, áp lực mua đẩy giá lên; khi có sợ hãi, áp lực bán đẩy giá xuống.^[raw/articles/rayner-teo-trend-trading-strategy.md]
+**Trend Following** (giao dịch theo xu hướng) là chiến lược mua khi giá đang trong uptrend và bán khi giá đang trong downtrend. Nguyên lý cốt lõi: xu hướng tồn tại nhờ lòng tham và nỗi sợ của con người — khi có tham lam, áp lực mua đẩy giá lên; khi có sợ hãi, áp lực bán đẩy giá xuống.^[trading/raw/articles/rayner-teo-trend-trading-strategy.md]
 
 ## Tại sao Trend Following hiệu quả?
 
@@ -21,7 +21,7 @@ confidence: high
 3. **Áp dụng được mọi thị trường**: Forex, futures, stocks, bonds, commodities — xu hướng xuất hiện ở khắp nơi
 4. **Bản chất tâm lý bất biến**: Chỉ khi con người hết cảm xúc, trend mới ngừng hoạt động
 
-> Những huyền thoại giao dịch như Jesse Livermore ($100M năm 1929), Richard Dennis ($400M), Ed Seykota (250,000% return 16 năm) — tất cả đều là trend followers.^[raw/articles/rayner-teo-trend-trading-strategy.md]
+> Những huyền thoại giao dịch như Jesse Livermore ($100M năm 1929), Richard Dennis ($400M), Ed Seykota (250,000% return 16 năm) — tất cả đều là trend followers.^[trading/raw/articles/rayner-teo-trend-trading-strategy.md]
 
 ## Cách Định nghĩa Xu hướng Chuyên nghiệp
 

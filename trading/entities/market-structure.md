@@ -4,7 +4,7 @@ type: entity
 created: 2026-04-30
 updated: 2026-04-30
 tags: [market-structure, technical-analysis, trend-analysis, forex, trading-strategy]
-sources: [raw/articles/wikipedia-price-action-trading.md, concepts/multi-timeframe-forex.md]
+sources: [trading/raw/articles/wikipedia-price-action-trading.md, trading/concepts/multi-timeframe-forex.md]
 confidence: high
 ---
 
@@ -81,7 +81,7 @@ Price Action trader sử dụng cấu trúc thị trường để:
 - **Swing High**: Đỉnh cục bộ — nến có high cao hơn nến trước và nến sau
 - **Swing Low**: Đáy cục bộ — nến có low thấp hơn nến trước và nến sau
 
-Khoảng cách giữa các swing points cho biết **momentum**:^[raw/articles/tradingstrategyguides-price-action.md]
+Khoảng cách giữa các swing points cho biết **momentum**:^[trading/raw/articles/tradingstrategyguides-price-action.md]
 - Khoảng cách **tăng dần** = momentum mạnh, trend khỏe
 - Khoảng cách **thu hẹp** = momentum yếu, trend sắp kết thúc
 
@@ -101,7 +101,7 @@ Kênh xu hướng = trend line + đường song song phía đối diện:
 
 ### Micro Trend Lines
 
-Trên khung thời gian nhỏ hơn, có thể vẽ các micro trend line để tìm điểm entry chính xác. Micro trend line bị phá vỡ thường báo hiệu kết thúc pullback.^[raw/articles/wikipedia-price-action-trading.md]
+Trên khung thời gian nhỏ hơn, có thể vẽ các micro trend line để tìm điểm entry chính xác. Micro trend line bị phá vỡ thường báo hiệu kết thúc pullback.^[trading/raw/articles/wikipedia-price-action-trading.md]
 
 ## Phân tích Sức mạnh Cấu trúc
 
@@ -126,7 +126,7 @@ Khi giá vượt qua một mức cấu trúc quan trọng:
 - **Breakout khỏi S/R** → cấu trúc mới hình thành
 - **Breakout khỏi range** → bắt đầu xu hướng mới
 
-> ⚠️ **Cảnh báo**: Breakout bars lớn bất thường trong ngày ít biến động thường thất bại. 50%+ breakout thất bại trong điều kiện thị trường yên tĩnh.^[raw/articles/wikipedia-price-action-trading.md]
+> ⚠️ **Cảnh báo**: Breakout bars lớn bất thường trong ngày ít biến động thường thất bại. 50%+ breakout thất bại trong điều kiện thị trường yên tĩnh.^[trading/raw/articles/wikipedia-price-action-trading.md]
 
 ### Pullback
 
@@ -138,7 +138,7 @@ Sau breakout, giá thường quay lại test mức vừa phá vỡ:
 
 ## Trend Channel Line Overshoot
 
-Khi giá vượt ra khỏi kênh xu hướng (overshoot):^[raw/articles/wikipedia-price-action-trading.md]
+Khi giá vượt ra khỏi kênh xu hướng (overshoot):^[trading/raw/articles/wikipedia-price-action-trading.md]
 
 - Đây thường là **climactic exhaustion** — những trader cuối cùng FOMO vào lệnh
 - Sau overshoot, thị trường thường đảo chiều hoặc điều chỉnh

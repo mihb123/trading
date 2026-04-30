@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [price-action, trading-strategy, technical-analysis, forex, support-resistance, breakout-trading, pattern-recognition]
-sources: [raw/articles/tradingsetupsreview-2-trapped-traders.md, concepts/price-action.md]
+sources: [trading/raw/articles/tradingsetupsreview-2-trapped-traders.md, trading/concepts/price-action.md]
 confidence: high
 ---
 
@@ -12,7 +12,7 @@ confidence: high
 
 ## Định nghĩa
 
-**Trapped Traders** (nhà giao dịch bị mắc kẹt) là một khái niệm Price Action dùng để phát hiện những điểm mà một nhóm trader đã vào lệnh sai hướng và buộc phải thoát (stop loss, hoặc đảo chiều vị thế). Khi họ thoát lệnh, dòng lệnh của họ tạo ra động lực mạnh để bạn vào lệnh cùng chiều.^[raw/articles/tradingsetupsreview-2-trapped-traders.md]
+**Trapped Traders** (nhà giao dịch bị mắc kẹt) là một khái niệm Price Action dùng để phát hiện những điểm mà một nhóm trader đã vào lệnh sai hướng và buộc phải thoát (stop loss, hoặc đảo chiều vị thế). Khi họ thoát lệnh, dòng lệnh của họ tạo ra động lực mạnh để bạn vào lệnh cùng chiều.^[trading/raw/articles/tradingsetupsreview-2-trapped-traders.md]
 
 Đây là cốt lõi của nhiều mô hình nổi tiếng như **Hikkake Pattern**, **Fakey Pattern**, và **False Breakout**.
 

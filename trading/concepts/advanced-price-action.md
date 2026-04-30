@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [price-action, technical-analysis, candlesticks, trading-strategy, pattern-recognition, advanced]
-sources: [raw/articles/admiral-advanced-candlestick.md, raw/articles/ig-price-action-trading.md]
+sources: [trading/raw/articles/admiral-advanced-candlestick.md, trading/raw/articles/ig-price-action-trading.md]
 confidence: medium
 ---
 

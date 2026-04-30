@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [trend-analysis, technical-analysis, price-action, trading-strategy, support-resistance, chart-patterns]
-sources: [raw/articles/forex-com-technical-analysis.md, raw/articles/admiral-trendlines.md, raw/articles/ig-trend-trading.md]
+sources: [trading/raw/articles/forex-com-technical-analysis.md, trading/raw/articles/admiral-trendlines.md, trading/raw/articles/ig-trend-trading.md]
 confidence: high
 ---
 

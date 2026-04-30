@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [candlesticks, price-action, technical-analysis, forex, trading-strategy, reference]
-sources: [raw/articles/wikipedia-candlestick-pattern.md, raw/articles/tradingstrategyguides-price-action.md, raw/articles/wikipedia-price-action-trading.md]
+sources: [trading/raw/articles/wikipedia-candlestick-pattern.md, trading/raw/articles/tradingstrategyguides-price-action.md, trading/raw/articles/wikipedia-price-action-trading.md]
 confidence: high
 ---
 
@@ -12,7 +12,7 @@ confidence: high
 
 ## Lịch sử
 
-Phân tích nến (candlestick analysis) có nguồn gốc từ Nhật Bản thế kỷ 18. **Munehisa Homma** (1724-1803), một thương nhân gạo từ Sakata, đã phát triển phương pháp theo dõi giá gạo bằng biểu đồ nến tại chợ Dojima ở Osaka. Ông xuất bản tác phẩm *"The Fountain of Gold — The Three Monkey Record of Money"* năm 1755. Tính theo thời giá hiện tại, ông đã kiếm được khoảng $10 tỷ USD.^[raw/articles/wikipedia-candlestick-pattern.md]
+Phân tích nến (candlestick analysis) có nguồn gốc từ Nhật Bản thế kỷ 18. **Munehisa Homma** (1724-1803), một thương nhân gạo từ Sakata, đã phát triển phương pháp theo dõi giá gạo bằng biểu đồ nến tại chợ Dojima ở Osaka. Ông xuất bản tác phẩm *"The Fountain of Gold — The Three Monkey Record of Money"* năm 1755. Tính theo thời giá hiện tại, ông đã kiếm được khoảng $10 tỷ USD.^[trading/raw/articles/wikipedia-candlestick-pattern.md]
 
 Steve Nison là người đã phổ biến biểu đồ nến Nhật ra thế giới phương Tây qua cuốn sách *"Japanese Candlestick Charting Techniques"*.
 
@@ -40,7 +40,7 @@ Mỗi cây nến (candlestick) thể hiện 4 mức giá trong một khoảng th
 
 ## Phân loại Mô hình Nến
 
-Có **42 mẫu hình nến được công nhận**, chia thành 2 nhóm:^[raw/articles/wikipedia-candlestick-pattern.md]
+Có **42 mẫu hình nến được công nhận**, chia thành 2 nhóm:^[trading/raw/articles/wikipedia-candlestick-pattern.md]
 
 ### Nhóm Đơn giản (Simple Patterns) — 1-2 nến
 

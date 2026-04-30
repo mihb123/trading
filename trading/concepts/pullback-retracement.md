@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags: [price-action, retracement, pullback, entry-technique, trend-trading, risk-management]
-sources: [raw/articles/nial-fuller-retracement-entries.md, raw/articles/rayner-price-action-strategies.md]
+sources: [trading/raw/articles/nial-fuller-retracement-entries.md, trading/raw/articles/rayner-price-action-strategies.md]
 confidence: high
 ---
 

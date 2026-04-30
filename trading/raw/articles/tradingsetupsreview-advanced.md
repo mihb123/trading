@@ -7,5 +7,5 @@ sha256: no-content-replaced
 ---
 
 This file superseded by:
-- raw/articles/tradingsetupsreview-1-uncover-patterns.md
-- raw/articles/tradingsetupsreview-2-trapped-traders.md
+- trading/raw/articles/tradingsetupsreview-1-uncover-patterns.md
+- trading/raw/articles/tradingsetupsreview-2-trapped-traders.md

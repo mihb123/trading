@@ -6,4 +6,4 @@ notes: Used browser tool to bypass Vercel security. Full article extracted.
 sha256: no-content-replaced
 ---
 
-This file superseded by raw/articles/quantvps-price-action-guide.md (full content extraction)
+This file superseded by trading/raw/articles/quantvps-price-action-guide.md (full content extraction)
