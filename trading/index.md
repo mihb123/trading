@@ -27,3 +27,5 @@
 - [[price-action-vs-indicators]] - So sánh chi tiết Price Action vs Indicator-Based Trading
 
 ## Queries
+- [[trinity-confluence-idea]] - Ý tưởng giao dịch Trinity Confluence (3 lớp lọc)
+- [[trinity-confluence-mql5]] - Hướng dẫn implement MQL5 đầy đủ

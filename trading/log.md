@@ -135,3 +135,8 @@
 - Created root `README.md` as topic catalog
 - Git history preserved (git mv)
 - Convention: future topics get their own `topic-name/` folder with same structure
+
+## [2026-04-30] create | Trinity Confluence trading strategy
+- Created: trading/strategies/trinity-confluence-idea.md — Ý tưởng giao dịch (3 lớp lọc: Trend D1 → S/R Zone → PA Trigger H1)
+- Created: trading/strategies/trinity-confluence-mql5.md — Implement MQL5 (28K chars, 300+ lines code)
+- Updated: trading/index.md (17 pages, added Queries section)
